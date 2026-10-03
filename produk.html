@@ -36,6 +36,56 @@
             </p>
         </section>
 
+        <section class="product-section">
+
+            <div class="search-box">
+                <input 
+                type="text" 
+                id="searchInput"
+                placeholder="🔍Cari produk..."
+                aria-label="Cari produk"
+                >
+            </div>
+
+            <div class="filter">
+                <button
+                    type="button"
+                    class="filter-btn active"
+                    data-filter="semua">
+                    Semua
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="skincare">
+                    Skincare
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="makeup">
+                    Makeup
+                </button>
+            </div>
+
+            <p id="jumlahProduk" class="jumlah-produk"></p>
+                
+            <div id="productList" class="product-list"></div>
+            
+            <p id="produkKosong" class="produk-kosong">
+                Produk tidak ditemukan.
+            </p>
+
+        </section>
+    
     </main>
+
+    <footer>
+        <p>© 2026 Wardah Beauty Website</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
