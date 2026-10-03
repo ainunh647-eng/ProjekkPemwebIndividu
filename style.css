@@ -198,3 +198,153 @@ section {
     text-align: center;
     margin-bottom: 35px;
 }
+
+.section-heading p {
+    color: #d63384;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    color: #a61e5c;
+    font-size: 32px;;
+    margin-top: 5px;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: 
+        repeat(3, 1fr);
+    gap:25px;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 
+        0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 10px 25px rgba(214, 51, 132, 0.15);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color:#d63384;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #777;
+}
+
+.home-promo {
+    background-color: linear-gradient (
+        135deg,
+        #d63384,
+        #a61e5c
+    );
+    color: white;
+    border-radius: 25px;
+    margin: 40px 8% 70px;
+    padding:50px;
+    text-align: center;
+}
+
+.home-promo .subtitle {
+    color: #ffe1ee;
+}
+
+.home-promo p:not(.subtitle) {
+    color: #ffeef6;
+}
+
+.page-title {
+    text-align: center;
+    padding: 65px 20px 30px;
+}
+
+.page-title h1 {
+    color: #a61e5c;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.page-title > p:last-child {
+    color: #777;
+}
+
+.product-section {
+    padding-top: 25px;
+}
+
+.search-box {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #f3bfd4;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #d63384;
+    box-shadow: 
+        0 0 0 4px rgba(214, 51, 132, 0.08);
+} 
+
+.filter {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    border:none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background-color: #f8dce8;
+    color: #a61e5c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #f1bfd3;
+}
+
+.filter-btn.active {
+    background-color: #d63384;
+    color: white;
+}
+
+.jumlah-produk {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 
+    repeat(3, 1fr);
+    gap: 25px;
+}
