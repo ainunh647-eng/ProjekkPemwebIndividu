@@ -27,12 +27,92 @@
     <main>
 
         <section class="page-title">
-            <p class="subtitle">CONTACT</p>
+            <p class="subtitle">CONTACT US</p>
             <h1>Hubungi Kami</h1>
+            <p>
+                Ada pertanyaan? Silahkan kirim pesan melalui form.
+            </p>
         </section>
 
         <section class="contact">
 
+            <div class="contact-info">
+                <h2>Informasi Kontak</h2>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>wardahbeauty@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>📞</span>
+                    <div>
+                        <h3>Telepon</h3>
+                        <p>+62 831-4114-0234</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>📍</span>
+                    <div>
+                        <h3>Lokasi</h3>
+                        <p>Jl. Kp. Baru IV No. 1, RT.5/RW.2, Ulujami, Pesanggrahan, Jakarta Selatan 12250.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        row="5"
+                        placeholder="Tulis pesan kamu..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="main-button">
+                    Kirim Pesan 💌
+                </button>
+
+            </form>
+
+        </section>
+
     </main>
+
+    <footer>
+        <p>© 2026 Wardah Beauty Website</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
