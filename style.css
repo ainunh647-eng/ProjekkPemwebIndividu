@@ -87,3 +87,114 @@ nav a.active {
     background-color: #b02a6f;
     transform: translateY(-2px);
 }
+
+#cartCount {
+    background-color: white;
+    color: #d63384;
+
+    padding: 2px 7px;
+    margin-left: 4px;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+}
+
+.hero {
+    min-height: 520px;
+
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background-color: linear-gradient (
+        135deg,
+        #fff0f6,
+        #ffe0ed
+    );
+}
+
+.hero-text {
+    max-width: 570px;
+}
+
+.subtitle {
+    color:#d63384;
+    font-family: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.hero-text h1 {
+    color: #a61e5c;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color:#d63384;
+}
+
+.hero-text > p:not(.subtitle) {
+    color: #666;
+    font-size: 17px;
+}
+
+.hero-image {
+    width:500px;
+    max-width: 48%;
+    padding: 15px;
+    border-radius:30px;
+    box-shadow: 
+        0 10px 30px rgba(214, 51, 132, 0.15);
+}
+
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    padding: 0;
+    margin: 0;
+
+    border-radius: 20px;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    background-color: #d63384;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: #b02a6f;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
