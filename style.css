@@ -32,3 +32,58 @@ header {
     top: 0;
     z-index: 100;
 }
+
+.logo {
+    color: #c2185b;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 3px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d63384;
+}
+
+nav a.active {
+    color: #d63384;
+    border-bottom: 2px solid #d63384;
+}
+
+.cart-link,
+.cart-button {
+    border: none;
+    text-decoration: none;
+    background-color: #d63384;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cart-link:hover,
+.cart-button:hover {
+    background-color: #b02a6f;
+    transform: translateY(-2px);
+}
