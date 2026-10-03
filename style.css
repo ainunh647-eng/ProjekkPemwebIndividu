@@ -439,3 +439,38 @@ section {
     color: white;
 }
 
+.produk-kosong {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    color: #999;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 
+        1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: contain;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 
+        0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.about-text h2 {
+    color: #a61e5c;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about-text p:not(.subtitle) {
+    color: #666;
+    margin-bottom: 15px;
+}
