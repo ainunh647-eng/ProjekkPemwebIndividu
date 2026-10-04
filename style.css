@@ -111,7 +111,7 @@ nav a.active {
 
     gap: 50px;
 
-    background: linear-gradient (
+    background: linear-gradient(
         135deg,
         #fff0f6,
         #ffe0ed
@@ -250,7 +250,7 @@ section {
 }
 
 .home-promo {
-    background: linear-gradient (
+    background: linear-gradient(
         135deg,
         #d63384,
         #a61e5c
@@ -258,7 +258,7 @@ section {
     color: white;
     border-radius: 25px;
     margin: 40px 8% 70px;
-    padding:50px;
+    padding: 50px;
     text-align: center;
 }
 
