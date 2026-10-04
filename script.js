@@ -1,5 +1,4 @@
 const produk = [
-
     {
         nama: "Wardah Lightening Whip Facial Foam",
         kategori: "skincare",
@@ -40,5 +39,47 @@ const produk = [
         kategori: "makeup",
         harga: 45000,
         gambar: "WardahBBCream.jpg"
-    },
-]
+    }
+];
+
+let jumlahKeranjang = 0;
+
+let kategoriAktif = "semua";
+
+function tampilkanProduk(data) {
+
+    const productList = 
+        document.getElementById("produkList");
+
+    const jumlahProduk = 
+        document.getElementById("jumlahProduk");
+
+    const produkKosong =
+        document.getElementById("produkKosong");
+
+    if (!productList) {
+        return;
+    }
+
+    productList.innerHTML = "";
+
+    if (jumlahProduk) {
+        jumlahProduk.textContent = 
+            "Menampilkan " + data.length + " produk";
+    }
+
+    if (data.length === 0) {
+
+        if (produkKosong) {
+            produkKosong.style.display = "block";
+        }
+
+        return;
+    
+    } else {
+         if (produkKosong) {
+            produkKosong.style.display = "none";
+        }
+    }
+
+}
