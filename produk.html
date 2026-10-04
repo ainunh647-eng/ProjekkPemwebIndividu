@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wardah Beauty - Produk</title>
+
+     <!-- Menghubungkan file CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Menghubungkan library SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
     
+    <!-- Header dan navigasi utama -->
     <header>
         <div class="logo">WARDAH</div>
 
@@ -20,6 +25,7 @@
             <a href="kontak.html">Kontak</a>
         </nav>
 
+        <!-- Tombol untuk melihat keranjang -->
         <button class="cart-button" id="cartButton">
             🛒 Keranjang
         </button>
@@ -27,6 +33,7 @@
 
     <main>
 
+        <!-- Judul halaman produk -->
         <section class="page-title">
             <p class="subtitle">OUR PRODUCTS</p>
             <h1>Produk Wardah</h1>
@@ -35,8 +42,10 @@
             </p>
         </section>
 
+        <!-- Bagian pencarian dan filter produk -->
         <section class="product-section">
 
+            <!-- Kolom pencarian produk -->
             <div class="search-box">
                 <input 
                 type="text" 
@@ -46,6 +55,7 @@
                 >
             </div>
 
+            <!-- Tombol untuk menyaring produk berdasarkan kategori -->
             <div class="filter">
                 <button
                     type="button"
@@ -69,10 +79,13 @@
                 </button>
             </div>
 
+             <!-- Menampilkan jumlah produk -->
             <p id="jumlahProduk" class="jumlah-produk"></p>
                 
+            <!-- Tempat menampilkan daftar produk -->
             <div id="productList" class="product-list"></div>
             
+            <!-- Pesan jika produk tidak ditemukan -->
             <p id="produkKosong" class="produk-kosong">
                 Produk tidak ditemukan.
             </p>
@@ -81,10 +94,12 @@
     
     </main>
 
+    <!-- Footer halaman -->
     <footer>
         <p>© 2026 Wardah Beauty Website</p>
     </footer>
 
+    <!-- Menghubungkan file JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
