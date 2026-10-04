@@ -273,3 +273,171 @@ if (searchInput) {
     );
 
 }
+
+function filterProduk() {
+
+    const keyword =
+        searchInput
+            ? searchInput.value
+                .toLowerCase()
+                .trim()
+            : "";
+
+
+    const hasil =
+        produk.filter(function(item) {
+
+            const sesuaiKategori =
+                kategoriAktif === "semua" ||
+                item.kategori === kategoriAktif;
+
+
+            const sesuaiSearch =
+                item.nama
+                    .toLowerCase()
+                    .includes(keyword);
+
+
+            return
+                sesuaiKategori &&
+                sesuaiSearch;
+
+        });
+
+
+    tampilkanProduk(hasil);
+}
+
+const cartButton =
+    document.getElementById("cartButton");
+
+
+if (cartButton) {
+
+    cartButton.addEventListener(
+        "click",
+        function() {
+
+            if (jumlahKeranjang === 0) {
+
+                Swal.fire({
+
+                    title: "Keranjang Kosong 🛒",
+
+                    text:
+                        "Silakan pilih produk terlebih dahulu.",
+
+                    icon: "info",
+
+                    confirmButtonText: "OK",
+
+                    confirmButtonColor: "#d63384"
+
+                });
+
+            } else {
+
+                Swal.fire({
+
+                    title: "Keranjang Kamu 🛒",
+
+                    text:
+                        "Ada " +
+                        jumlahKeranjang +
+                        " produk di keranjang.",
+
+                    icon: "success",
+
+                    confirmButtonText: "OK",
+
+                    confirmButtonColor: "#d63384"
+
+                });
+
+            }
+
+        }
+    );
+
+}
+
+const contactForm =
+    document.getElementById("contactForm");
+
+
+if (contactForm) {
+
+    contactForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            const nama =
+                document
+                    .getElementById("nama")
+                    .value
+                    .trim();
+
+
+            const email =
+                document
+                    .getElementById("email")
+                    .value
+                    .trim();
+
+
+            const pesan =
+                document
+                    .getElementById("pesan")
+                    .value
+                    .trim();
+
+            if (
+                nama === "" ||
+                email === "" ||
+                pesan === ""
+            ) {
+
+                Swal.fire({
+
+                    title: "Data Belum Lengkap",
+
+                    text:
+                        "Silakan isi semua bagian form.",
+
+                    icon: "warning",
+
+                    confirmButtonColor: "#d63384"
+
+                });
+
+                return;
+            }
+
+            Swal.fire({
+
+                title: "Pesan Terkirim! 💌",
+
+                text:
+                    "Terima kasih, " +
+                    nama +
+                    ". Pesan kamu berhasil dikirim.",
+
+                icon: "success",
+
+                confirmButtonText: "OK",
+
+                confirmButtonColor: "#d63384"
+
+            });
+
+            contactForm.reset();
+
+        }
+    );
+
+}
+
+tampilkanProduk(produk);
