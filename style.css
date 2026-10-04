@@ -1,13 +1,16 @@
+/* Mengatur tampilan dasar halaman */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Membuat perpindahan halaman lebih halus */
 html {
     scroll-behavior: smooth;
 }
 
+/* Mengatur tampilan umum halaman */
 body {
     font-family: 'Arial', Helvetica, sans-serif;
     background-color: #fff7fa;
@@ -15,6 +18,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header dan navigasi */
 header {
     background-color: #ffffff;
     min-height: 68px;
@@ -33,6 +37,7 @@ header {
     z-index: 100;
 }
 
+/* Logo Wardah */
 .logo {
     color: #c2185b;
     font-size: 24px;
@@ -40,6 +45,7 @@ header {
     letter-spacing: 1px;
 }
 
+/* Menu navigasi */
 nav {
     display: flex;
     align-items: center;
@@ -47,6 +53,7 @@ nav {
     gap: 25px;
 }
 
+/* Tampilan link navigasi */
 nav a {
     color: #444;
     text-decoration: none;
@@ -56,15 +63,18 @@ nav a {
     transition: 0.3s;
 }
 
+/* Efek saat menu disentuh */
 nav a:hover {
     color: #d63384;
 }
 
+/* Menandai halaman yang sedang aktif */
 nav a.active {
     color: #d63384;
     border-bottom: 2px solid #d63384;
 }
 
+/* Tombol keranjang */
 .cart-link,
 .cart-button {
     border: none;
@@ -82,12 +92,14 @@ nav a.active {
     transition: 0.3s;
 }
 
+/* Efek hover tombol keranjang */
 .cart-link:hover,
 .cart-button:hover {
     background-color: #b02a6f;
     transform: translateY(-2px);
 }
 
+/* Mengatur jumlah produk pada keranjang */
 #cartCount {
     background-color: white;
     color: #d63384;
@@ -100,6 +112,7 @@ nav a.active {
     font-size: 12px;
 }
 
+/* Tampilan bagian utama beranda */
 .hero {
     min-height: 520px;
 
@@ -118,10 +131,12 @@ nav a.active {
     );
 }
 
+/* Tampilan teks pada hero */
 .hero-text {
     max-width: 570px;
 }
 
+/* Teks kecil pada judul section */
 .subtitle {
     color:#d63384;
     font-size: 14px;
@@ -131,6 +146,7 @@ nav a.active {
     margin-bottom: 12px;
 }
 
+/* Judul utama */
 .hero-text h1 {
     color: #a61e5c;
     font-size: 48px;
@@ -138,15 +154,18 @@ nav a.active {
     margin-bottom: 20px;
 }
 
+/* Memberikan warna pada kata Wardah */
 .hero-text h1 span {
     color:#d63384;
 }
 
+/* Deskripsi pada hero */
 .hero-text > p:not(.subtitle) {
     color: #666;
     font-size: 17px;
 }
 
+/* Gambar utama */
 .hero-image {
     width:500px;
     max-width: 48%;
@@ -156,6 +175,7 @@ nav a.active {
         0 10px 30px rgba(214, 51, 132, 0.15);
 }
 
+/* Mengatur ukuran gambar hero */
 .hero-image img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -171,6 +191,7 @@ nav a.active {
     border-radius: 20px;
 }
 
+/* Tombol utama */
 .main-button {
     display: inline-block;
     margin-top: 25px;
@@ -185,11 +206,13 @@ nav a.active {
     transition: 0.3s;
 }
 
+/* Efek hover tombol utama */
 .main-button:hover {
     background-color: #b02a6f;
     transform: translateY(-2px);
 }
 
+/* Mengatur tombol promosi */
 .promo-button {
     display: inline-block;
     margin-top: 25px;
@@ -203,20 +226,24 @@ nav a.active {
     transition: 0.3s;
 }
 
+/* Efek saat tombol promosi disentuh */
 .promo-button:hover {
     background-color: #b02a6f;
     transform: translateY(-2px);
 }
 
+/* Mengatur jarak setiap section */
 section {
     padding: 70px 8%;
 }
 
+/* Mengatur judul section */
 .section-heading {
     text-align: center;
     margin-bottom: 35px;
 }
 
+/* Mengatur teks kecil pada judul section */
 .section-heading p {
     color: #d63384;
     font-size: 14px;
@@ -224,12 +251,14 @@ section {
     letter-spacing: 2px;
 }
 
+/* Mengatur judul utama section */
 .section-heading h2 {
     color: #a61e5c;
     font-size: 32px;;
     margin-top: 5px;
 }
 
+/* Mengatur daftar fitur */
 .feature-list {
     display: grid;
     grid-template-columns: 
@@ -237,6 +266,7 @@ section {
     gap:25px;
 }
 
+/* Mengatur kartu fitur */
 .feature-card {
     background-color: white;
     padding: 35px 25px;
@@ -247,26 +277,31 @@ section {
     transition: 0.3s;
 }
 
+/* Mengatur kartu fitur disentuh */
 .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 
         0 10px 25px rgba(214, 51, 132, 0.15);
 }
 
+/* Mengatur ukuran ikon fitur */
 .feature-icon {
     font-size: 40px;
     margin-bottom: 15px;
 }
 
+/* Mengatur judul kartu fitur */
 .feature-card h3 {
     color:#d63384;
     margin-bottom: 10px;
 }
 
+/* Mengatur paragraf kartu fitur */
 .feature-card p {
     color: #777;
 }
 
+/* Mengatur tampilan bagian promosi */
 .home-promo {
     background: linear-gradient(
         135deg,
@@ -280,38 +315,46 @@ section {
     text-align: center;
 }
 
+/* Mengatur tampilan bagian promosi */
 .home-promo .subtitle {
     color: #ffe1ee;
 }
 
+/* Mengatur warna paragraf pada promo */
 .home-promo p:not(.subtitle) {
     color: #ffeef6;
 }
 
+/* Mengatur tampilan judul halaman */
 .page-title {
     text-align: center;
     padding: 65px 20px 30px;
 }
 
+/* Mengatur ukuran judul halaman */
 .page-title h1 {
     color: #a61e5c;
     font-size: 38px;
     margin-bottom: 8px;
 }
 
+/* Mengatur deskripsi judul halaman */
 .page-title > p:last-child {
     color: #777;
 }
 
+/* Mengatur bagian produk */
 .product-section {
     padding-top: 25px;
 }
 
+/* Mengatur bagian produk */
 .search-box {
     max-width: 650px;
     margin: 0 auto 25px;
 }
 
+/* Mengatur input pencarian */
 .search-box input {
     width: 100%;
     padding: 15px 20px;
@@ -323,17 +366,20 @@ section {
     transition: 0.3s;
 }
 
+/* Efek saat kolom pencarian dipilih */
 .search-box input:focus {
     border-color: #d63384;
     box-shadow: 
         0 0 0 4px rgba(214, 51, 132, 0.08);
 } 
 
+/* Mengatur bagian tombol filter */
 .filter {
     text-align: center;
     margin-bottom: 25px;
 }
 
+/* Mengatur tombol filter */
 .filter-btn {
     border:none;
     padding: 10px 22px;
@@ -345,21 +391,25 @@ section {
     transition: 0.3s;
 }
 
+/* Efek saat tombol filter disentuh */
 .filter-btn:hover {
     background-color: #f1bfd3;
 }
 
+/* Menandai filter yang sedang aktif */
 .filter-btn.active {
     background-color: #d63384;
     color: white;
 }
 
+/* Mengatur teks jumlah produk */
 .jumlah-produk {
     text-align: center;
     color: #777;
     margin-bottom: 25px;
 }
 
+/* Mengatur daftar produk */
 .product-list {
     display: grid;
     grid-template-columns: 
@@ -367,6 +417,7 @@ section {
     gap: 25px;
 }
 
+/* Mengatur kartu produk */
 .product-card {
     background-color: white;
     padding: 16px;
@@ -376,11 +427,13 @@ section {
     overflow: hidden;
 }
 
+/* Efek saat kartu produk disentuh */
 .product-card:hover {
     transform: translateX(-7px);
     box-shadow: 0 12px 25px rgba(214, 51, 132, 0.15);
 }
 
+/* Mengatur gambar produk */
 .product-card img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -394,6 +447,7 @@ section {
     background-color: #fff4f8;
 }
 
+/* Mengatur tulisan kategori produk */
 .product-card .kategori {
     color: #d63384;
     text-transform: uppercase;
@@ -402,6 +456,7 @@ section {
     letter-spacing: 1px;
 }
 
+/* Mengatur nama produk */
 .product-card h3 {
     color: #444;
     font-size: 18px;
@@ -409,18 +464,21 @@ section {
     min-height: 54px;
 }
 
+/* Mengatur harga produk */
 .harga {
     color: #b02a6f;
     font-size: 19px;
     font-weight: bold;
 }
 
+/* Mengatur tombol pada kartu produk */
 .product-buttons {
     display: flex;
     gap: 8px;
     margin-top: 15px;
 }
 
+/* Mengatur tombol beli */
 .beli {
     flex: 1;
     border: none;
@@ -433,10 +491,13 @@ section {
     transition: 0.3s;
 }
 
+/* Efek saat tombol beli disentuh */
+
 .beli:hover {
     background-color: #b02a6f;
 }
 
+/* Mengatur tombol favorit */
 .favorite {
     width: 45px;
     border: none;
@@ -448,15 +509,18 @@ section {
     transition: 0.3s;
 }
 
+/* Efek saat tombol favorit disentuh */
 .favorite:hover {
     transform: scale(1.08);
 }
 
+/* Tampilan tombol favorit yang aktif */
 .favorite.active {
     background-color: #d63384;
     color: white;
 }
 
+/* Pesan ketika produk tidak ditemukan */
 .produk-kosong {
     display: none;
     text-align: center;
@@ -464,6 +528,7 @@ section {
     color: #999;
 }
 
+/* Mengatur bagian informasi tentang */
 .about {
     display: grid;
     grid-template-columns: 
@@ -472,6 +537,7 @@ section {
     gap: 60px;
 }
 
+/* Mengatur gambar pada halaman tentang */
 .about-image img {
     width: 100%;
     height: 430px;
@@ -482,17 +548,20 @@ section {
         0 5px 20px rgba(0, 0, 0, 0.07);
 }
 
+/* Mengatur judul pada bagian tentang */
 .about-text h2 {
     color: #a61e5c;
     font-size: 35px;
     margin-bottom: 15px;
 }
 
+/* Mengatur paragraf pada bagian tentang */
 .about-text p:not(.subtitle) {
     color: #666;
     margin-bottom: 15px;
 }
 
+/* Mengatur kartu informasi tentang */
 .about-info {
     display:grid;
     grid-template-columns: 
@@ -500,6 +569,7 @@ section {
     gap: 25px;
 }
 
+/* Mengatur tampilan kartu informasi */
 .info-card {
     text-align: center;
     background-color: white;
@@ -509,15 +579,18 @@ section {
         0 5px 20px rgba(0, 0, 0, 0.07);
 }
 
+/* Mengatur ikon pada kartu informasi */
 .info-card span {
     font-size: 35px;
 }
 
+/* Mengatur judul kartu informasi */
 .info-card h3 {
     color: #d63384;
     margin: 10px 0;
 }
 
+/* Mengatur tata letak bagian kontak */
 .contact {
     display: grid;
     grid-template-columns: 
@@ -525,11 +598,13 @@ section {
     gap: 50px;
 }
 
+/* Mengatur judul informasi kontak */
 .contact-info h2 {
     color: #a61e5c;
     margin-bottom: 25px;
 }
 
+/* Mengatur setiap informasi kontak */
 .contact-item {
     display: flex;
     align-items: center;
@@ -542,14 +617,17 @@ section {
         0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
+/* Mengatur judul informasi kontak */
 .contact-item h3 {
     color: #d63384;
 }
 
+/* Mengatur teks informasi kontak */
 .contact-item p {
     color: #777;
 }
 
+/* Mengatur tampilan form kontak */
 .contact-form {
     background-color: white;
     padding: 30px;
@@ -558,10 +636,12 @@ section {
         0 5px 20px rgba(0, 0, 0, 0.07);
 }
 
+/* Mengatur jarak antar input form */
 .form-group {
     margin-bottom: 18px;
 }
 
+/* Mengatur label pada form */
 .form-group label {
     display: block;
     margin-bottom: 6px;
@@ -569,6 +649,7 @@ section {
     color: #555;
 }
 
+/* Mengatur input dan textarea */
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -581,6 +662,7 @@ section {
     resize: vertical;
 }
 
+/* Efek saat input atau textarea dipilih */
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #d63384;
@@ -588,10 +670,12 @@ section {
         0 0 0 3px rgba(214, 51, 132, 0.08);
 }
 
+/* Membuat tombol form memenuhi lebar */
 .contact-form .main-button {
     width: 100%;
 }
 
+/* Mengatur tampilan footer */
 footer {
     background-color: #a61e5c;
     color: white;
@@ -600,10 +684,12 @@ footer {
     margin-top: 30px;
 }
 
+/* Mengatur ukuran teks footer */
 footer p {
     font-size: 14px;
 }
 
+/* RESPONSIVE TABLET*/
 @media (max-width: 900px) {
     
     header {
@@ -651,6 +737,7 @@ footer p {
     }
 }
 
+/* RESPONSIVE HP*/
 @media (max-width: 600px) {
 
     header {
