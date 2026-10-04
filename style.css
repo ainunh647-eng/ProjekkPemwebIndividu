@@ -474,3 +474,72 @@ section {
     color: #666;
     margin-bottom: 15px;
 }
+
+.about-info {
+    display:grid;
+    grid-template-columns: 
+        repeat(3, 1fr);
+    gap: 25px;
+}
+
+.info-card {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 
+        0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.info-card span {
+    font-size: 35px;
+}
+
+.info-card h3 {
+    color: #d63384;
+    margin: 10px 0;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 
+        1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    color: #a61e5c;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.contact-item h3 {
+    color: #d63384
+}
+
+.contact-item p {
+    color: #777;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 
+        0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
