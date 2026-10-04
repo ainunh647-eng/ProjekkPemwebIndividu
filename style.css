@@ -587,6 +587,7 @@ footer p {
 }
 
 @media (max-width: 900px) {
+    
     header {
         flex-wrap: wrap;
         justify-content: center;
@@ -632,3 +633,78 @@ footer p {
     }
 }
 
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .cart-link,
+    .cart-button {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    .page-title {
+        padding: 50px 20px 20px;
+    }
+
+    .page-title h1 {
+        font-size: 30px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 280px;
+    }
+
+    .home-promo {
+        margin: 20px 6% 50px;
+        padding: 35px 20px;
+    }
+
+    .home-promo h2 {
+        font-size: 25px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
