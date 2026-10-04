@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wardah Beauty - Kontak</title>
+
+    <!-- Menghubungkan file CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Menghubungkan library SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
+
+    <!-- Header dan navigasi utama -->
     <header>
         <div class="logo">WARDAH</div>
 
@@ -19,6 +25,7 @@
             <a href="kontak.html" class="active">Kontak</a>
         </nav>
 
+        <!-- Tombol menuju halaman produk -->
         <a href="produk.html" class="cart-link">
             🛒 Keranjang
         </a>
@@ -26,6 +33,7 @@
 
     <main>
 
+        <!-- Judul halaman kontak -->
         <section class="page-title">
             <p class="subtitle">CONTACT US</p>
             <h1>Hubungi Kami</h1>
@@ -34,10 +42,14 @@
             </p>
         </section>
 
+        <!-- Bagian informasi kontak dan formulir -->
         <section class="contact">
 
+             <!-- Informasi kontak -->
             <div class="contact-info">
                 <h2>Informasi Kontak</h2>
+
+                 <!-- Informasi email -->
                 <div class="contact-item">
                     <span>📧</span>
                     <div>
@@ -46,6 +58,7 @@
                     </div>
                 </div>
 
+                 <!-- Informasi telepon -->
                 <div class="contact-item">
                     <span>📞</span>
                     <div>
@@ -54,6 +67,7 @@
                     </div>
                 </div>
 
+                 <!-- Informasi lokasi -->
                 <div class="contact-item">
                     <span>📍</span>
                     <div>
@@ -64,8 +78,10 @@
 
             </div>
 
+            <!-- Formulir untuk mengirim pesan -->
             <form id="contactForm" class="contact-form">
 
+                <!-- Input nama -->
                 <div class="form-group">
                     <label for="nama">Nama</label>
                     <input
@@ -77,6 +93,7 @@
                     >
                 </div>
 
+                 <!-- Input email -->
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input
@@ -88,6 +105,7 @@
                     >
                 </div>
 
+                 <!-- Input pesan -->
                 <div class="form-group">
                     <label for="pesan">Pesan</label>
                     <textarea
@@ -99,6 +117,7 @@
                     ></textarea>
                 </div>
 
+                <!-- Tombol untuk mengirim pesan -->
                 <button type="submit" class="main-button">
                     Kirim Pesan 💌
                 </button>
@@ -109,10 +128,12 @@
 
     </main>
 
+    <!-- Footer halaman -->
     <footer>
         <p>© 2026 Wardah Beauty Website</p>
     </footer>
 
+     <!-- Menghubungkan file JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
