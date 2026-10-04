@@ -159,3 +159,117 @@ function tampilkanProduk(data) {
     });
 }
 
+function beliProduk(nama) {
+
+    jumlahKeranjang++;
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+    if (cartCount) {
+        cartCount.textContent =
+            jumlahKeranjang;
+    }
+
+    if (typeof Swal !== "undefined") {
+
+        Swal.fire({
+
+            title: "Berhasil! 💕",
+
+            text:
+                nama +
+                " berhasil ditambahkan ke keranjang.",
+
+            icon: "success",
+
+            confirmButtonText: "Lanjut Belanja",
+
+            confirmButtonColor: "#d63384"
+
+        });
+
+    } else {
+
+        alert(
+            nama +
+            " berhasil ditambahkan ke keranjang."
+        );
+
+    }
+}
+
+function favoriteProduk(button) {
+
+    button.classList.toggle("active");
+
+
+    if (button.classList.contains("active")) {
+
+        button.textContent = "♥";
+
+        button.setAttribute(
+            "aria-label",
+            "Hapus dari favorit"
+        );
+
+    } else {
+
+        button.textContent = "♡";
+
+        button.setAttribute(
+            "aria-label",
+            "Tambah favorit"
+        );
+
+    }
+}
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+
+filterButtons.forEach(function(button) {
+
+    button.addEventListener(
+        "click",
+        function() {
+
+            kategoriAktif =
+                button.getAttribute("data-filter");
+
+            filterButtons.forEach(
+                function(btn) {
+
+                    btn.classList.remove("active");
+
+                }
+            );
+
+
+            button.classList.add("active");
+
+
+            filterProduk();
+
+        }
+    );
+
+});
+
+const searchInput =
+    document.getElementById("searchInput");
+
+
+if (searchInput) {
+
+    searchInput.addEventListener(
+        "input",
+        function() {
+
+            filterProduk();
+
+        }
+    );
+
+}
