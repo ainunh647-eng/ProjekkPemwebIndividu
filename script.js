@@ -35,7 +35,7 @@ const produk = [
     },
 
     {
-        nama: "Wardah BB Crream",
+        nama: "Wardah BB Cream",
         kategori: "makeup",
         harga: 45000,
         gambar: "WardahBBCream.jpg"
@@ -49,7 +49,7 @@ let kategoriAktif = "semua";
 function tampilkanProduk(data) {
 
     const productList = 
-        document.getElementById("produkList");
+        document.getElementById("producList");
 
     const jumlahProduk = 
         document.getElementById("jumlahProduk");
@@ -284,8 +284,7 @@ function filterProduk() {
             : "";
 
 
-    const hasil =
-        produk.filter(function(item) {
+    const hasil = produk.filter(function(item) {
 
             const sesuaiKategori =
                 kategoriAktif === "semua" ||
@@ -299,8 +298,7 @@ function filterProduk() {
 
 
             return
-                sesuaiKategori &&
-                sesuaiSearch;
+                sesuaiKategori && sesuaiSearch;
 
         });
 

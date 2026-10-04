@@ -111,7 +111,7 @@ nav a.active {
 
     gap: 50px;
 
-    background-color: linear-gradient (
+    background: linear-gradient (
         135deg,
         #fff0f6,
         #ffe0ed
@@ -124,7 +124,7 @@ nav a.active {
 
 .subtitle {
     color:#d63384;
-    font-family: 14px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 2px;
 
@@ -250,7 +250,7 @@ section {
 }
 
 .home-promo {
-    background-color: linear-gradient (
+    background: linear-gradient (
         135deg,
         #d63384,
         #a61e5c
@@ -365,7 +365,7 @@ section {
 
 .product-card img {
     width: 100%;
-    aspect-ration: 1 / 1;
+    aspect-ratio: 1 / 1;
     height: auto;
     display: block;
     object-fit: cover;
@@ -431,7 +431,7 @@ section {
 }
 
 .favorite:hover {
-    transform: scale(1,08);
+    transform: scale(1.08);
 }
 
 .favorite.active {
@@ -525,7 +525,7 @@ section {
 }
 
 .contact-item h3 {
-    color: #d63384
+    color: #d63384;
 }
 
 .contact-item p {
@@ -567,7 +567,7 @@ section {
 .form-group textarea:focus {
     border-color: #d63384;
     box-shadow: 
-        0 0 0 3px rgba(214, 51, 132, 0.08)
+        0 0 0 3px rgba(214, 51, 132, 0.08);
 }
 
 .contact-form .main-button {
