@@ -543,3 +543,92 @@ section {
 .form-group {
     margin-bottom: 18px;
 }
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d63384;
+    box-shadow: 
+        0 0 0 3px rgba(214, 51, 132, 0.08)
+}
+
+.contact-form .main-button {
+    width: 100%;
+}
+
+footer {
+    background-color: #a61e5c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+    .hero-image {
+        max-width: 70%;
+        width: 400px;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    .product-list {
+        grid-template-columns: 
+            repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
