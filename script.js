@@ -49,7 +49,7 @@ let kategoriAktif = "semua";
 function tampilkanProduk(data) {
 
     const productList = 
-        document.getElementById("producList");
+        document.getElementById("productList");
 
     const jumlahProduk = 
         document.getElementById("jumlahProduk");
@@ -297,8 +297,7 @@ function filterProduk() {
                     .includes(keyword);
 
 
-            return
-                sesuaiKategori && sesuaiSearch;
+            return sesuaiKategori && sesuaiSearch;
 
         });
 
