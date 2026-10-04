@@ -77,9 +77,85 @@ function tampilkanProduk(data) {
         return;
     
     } else {
+
          if (produkKosong) {
             produkKosong.style.display = "none";
         }
     }
 
+    data.forEach(function(item) {
+
+        const article =
+            document.createElement("article");
+
+        article.className = "product-card";
+
+
+        article.innerHTML = `
+            <img
+                src="${item.gambar}"
+                alt="${item.nama}"
+            >
+
+            <p class="kategori">
+                ${item.kategori}
+            </p>
+
+            <h3>
+                ${item.nama}
+            </h3>
+
+            <p class="harga">
+                Rp ${item.harga.toLocaleString("id-ID")}
+            </p>
+
+            <div class="product-buttons">
+
+                <button
+                    type="button"
+                    class="beli"
+                    data-product="${item.nama}">
+                    Beli Sekarang
+                </button>
+
+                <button
+                    type="button"
+                    class="favorite"
+                    aria-label="Tambah favorit"
+                    title="Tambah favorit">
+                    ♡
+                </button>
+
+            </div>
+        `;
+
+        const tombolBeli =
+            article.querySelector(".beli");
+
+        tombolBeli.addEventListener(
+            "click",
+            function() {
+
+                beliProduk(item.nama);
+
+            }
+        );
+
+        const tombolFavorit =
+            article.querySelector(".favorite");
+
+        tombolFavorit.addEventListener(
+            "click",
+            function() {
+
+                favoriteProduk(tombolFavorit);
+
+            }
+        );
+
+
+        productList.appendChild(article);
+
+    });
 }
+
