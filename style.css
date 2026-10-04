@@ -190,6 +190,24 @@ nav a.active {
     transform: translateY(-2px);
 }
 
+.promo-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 35px;
+    background-color: #e33b8c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.promo-button:hover {
+    background-color: #b02a6f;
+    transform: translateY(-2px);
+}
+
 section {
     padding: 70px 8%;
 }
